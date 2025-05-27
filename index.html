@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TestPilot AI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/heroicons/2.1.1/24/outline/heroicons.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Lexend', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      scrollbar-width: thin; 
+      scrollbar-color: #c026d3 /* Fuchsia-600 */ #111827; /* Gray-900 track */
+      min-height: 100vh;
+      background-color: #0f0c29; /* Dark purple base */
+    }
+    .body-textured {
+      background-image: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%); /* Dark purple gradient */
+    }
+    
+    ::-webkit-scrollbar {
+      width: 10px;
+      height: 10px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #111827; /* Gray-900 */
+      border-radius: 5px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background-color: #c026d3; /* Fuchsia-600 */
+      border-radius: 5px;
+      border: 2px solid #111827; 
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background-color: #a21caf; /* Fuchsia-700 */
+    }
+    .hero-icon { 
+      width: 1.25em;
+      height: 1.25em;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: #1e1b4b; /* Indigo-950 */
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background-color: #a855f7; /* Purple-500 */
+      border: 2px solid #1e1b4b;
+    }
+     .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+      background-color: #9333ea; /* Purple-600 */
+    }
+    a {
+      transition: color 0.2s ease-in-out, opacity 0.2s ease-in-out;
+    }
+    ::selection {
+      background-color: #ec4899; /* Pink-500 */
+      color: #fdf2f8; /* Pink-50 */
+    }
+    *:focus-visible {
+        outline: 2px solid #ec4899; /* Pink-500 */
+        outline-offset: 2px;
+        border-radius: 2px;
+    }
+    details summary {
+      list-style: none;
+    }
+    details summary::-webkit-details-marker {
+      display: none;
+    }
+    /* Gradient text utility */
+    .text-gradient-purple-pink {
+      background-image: linear-gradient(to right, #a855f7, #ec4899, #f97316); /* Purple-500, Pink-500, Orange-500 */
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+     .text-gradient-cyan-teal {
+      background-image: linear-gradient(to right, #22d3ee, #14b8a6, #65a30d); /* Cyan-400, Teal-500, Lime-600 */
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.0.1"
+  }
+}
+</script>
+</head>
+<body class="bg-gradient-to-br from-slate-950 via-slate-900 to-black text-slate-200 body-textured h-full">
+  <div id="root" class="h-full flex flex-col"></div>
+  <script type="module" src="/index.tsx"></script>
+  <script></script>
+</body>
+</html><link rel="stylesheet" href="index.css">
+<script src="index.tsx" type="module"></script>
