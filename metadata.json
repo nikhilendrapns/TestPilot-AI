@@ -1,0 +1,6 @@
+
+{
+  "name": "TestPilot AI",
+  "description": "TestPilot AI: Your intelligent co-pilot for conceptual UI, API, and Load testing. Generate test ideas, simulate runs, and gain insights with AI. This app uses AI to conceptualize tests and does not interact with live systems directly.",
+  "requestFramePermissions": []
+}
